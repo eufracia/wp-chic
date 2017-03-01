@@ -1,0 +1,136 @@
+.section-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-images {
+    display: none;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-images-item {
+    margin-top: 20px;
+    max-height: 200px;
+}
+
+.section-images-large {
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-images-item-large {
+    margin-top: 20px;
+    height: 230px;
+}
+
+.section-about {
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 22px;
+}
+
+.section-about-items h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.section-column-member {
+    flex-direction: column;
+}
+
+.section-column-member h2, .section-column-info h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.section-column-member p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.member-image {
+    height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-images {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section-images-item {
+        flex: 1;
+        margin-top: 20px;
+        height: 400px;
+    }
+
+    .first-image {
+        margin-right: 10px;
+    }
+
+    .second-image {
+        margin-left: 10px;
+    }
+
+    .section-images-item-large {
+        height: 600px;
+    }
+
+    .section-about-image {
+        display: flex;
+    }
+
+    .section-about-image-items {
+        flex: 1;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .section-column-info h1 {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        color: #d8ae54;
+        margin-bottom: 18px;
+    }
+
+    .section-team {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .member-image {
+        height: 300px;
+    }
+
+    .section-inspiration {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-inspiration .section-column-image > div {
+        height: 450px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}

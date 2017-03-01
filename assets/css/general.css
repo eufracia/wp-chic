@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    padding: 30px;
+}
+
+.header-logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.header-navs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.header-navs-ul {
+    display: none;
+}
+
+.header-navs li {
+    list-style: none;
+    border-top: 1px solid #eee;
+}
+
+.header-navs li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-navs {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.footer-navs li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.footer-navs li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        position: absolute;
+        width: 100%;
+    }
+
+    .header-navs {
+        flex-direction: row;
+    }
+
+    .header-logo {
+        color: #fff;
+        text-align: left;
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .header-navs-ul {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .header-navs li {
+        display: flex;
+        align-items: center;
+        border-top: none;
+    }
+
+    .header-navs li a {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .footer-navs-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+}

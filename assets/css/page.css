@@ -1,0 +1,28 @@
+.section-page-header {
+    min-height: 150px;
+    padding-top: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.section-page-header h1 {
+    max-width: 400px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #ebbd5c;
+}
+
+.section-page-header p {
+    color: #fff;
+    max-width: 600px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+

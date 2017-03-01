@@ -1,0 +1,43 @@
+<section class="section section-hero" style="background-image: url('{{acf.hero_background_image}}'); background-size: cover;">
+    <div class="hero-container">
+        <h1 class="hero-title">{{acf.hero_title}}</h1>
+        <p class="hero-desc">{{acf.hero_description}}</p>
+        <a class="hero-button" href="{{acf.hero_link_url}}">{{acf.hero_link_text}}</a>
+    </div>
+</section>
+<section class="section section-intro">
+    <div class="section-column section-column-image">
+        <div style="background-image: url('{{acf.introduction_image}}'); background-size: cover;"></div>
+    </div>
+    <div class="section-column section-column-info">
+        <h1 class="intro-title">{{acf.introduction_title}}</h1>
+        <p class="intro-desc">{{acf.introduction_description}}</p>
+    </div>
+</section>
+<section class="section section-offer">
+    <div class="section-column section-column-image">
+        <div style="background-image: url('{{acf.offer_image}}'); background-size: cover;"></div>
+    </div>
+    <div class="section-column section-column-info">
+        <h1>{{acf.offer_title}}</h1>
+        <p>{{acf.offer_description}}</p>
+        <p>{{acf.offer_time}}</p>
+        <a class="section-column-button" href="{{acf.offer_link_url}}">{{acf.offer_link_text}}</a>
+    </div>
+</section>
+<section class="section section-events">
+    <div class="section-column section-column-image">
+        <div style="background-image: url('{{acf.event_image}}'); background-size: cover;"></div>
+    </div>
+    <div class="section-column section-column-info">
+        <h1>{{acf.event_title}}</h1>
+        <ul class="event-item">
+        {% for event in acf.event_item %}
+            <li>
+                <div class="event-name"><strong>{{ event.event_name }}</strong> {{ event.event_duration }}</div>
+                <div class="event-description"><span>{{ event.event_description }} - </span>${{ event.event_price }} per person</div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
