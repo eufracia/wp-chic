@@ -8,5 +8,6 @@ function wp_menu() {
 }
 
 add_action( 'init', 'wp_menu' );
+add_theme_support( 'title-tag' );
 
 ?>

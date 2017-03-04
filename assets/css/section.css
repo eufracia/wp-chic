@@ -25,6 +25,7 @@
     margin-top: 20px;
     width: 400px;
     max-width: 100%;
+    color: #d8ae54;
 }
 
 .section-column-info p {
@@ -38,8 +39,8 @@
 .section-column-button {
     color: #000;
     background-color: transparent;
-    border: solid #000 1px;
-    color: #000;
+    border: solid #d6b774 1px;
+    color: #d6b774;
     padding: 10px 40px;
     font-size: 12px;
     font-weight: 500;

@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    background-color: #f3f3f5;
 }
 
 h1, h2, h3, h4, h5 {
@@ -43,10 +44,16 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 30px;
+    position: relative;
 }
 
 .header-navs-ul {
     display: none;
+    margin-top: 30px;
+}
+
+.header-navs-ul-active {
+    display: initial;
 }
 
 .header-navs li {
@@ -59,9 +66,33 @@ nav {
     padding-bottom: 15px;
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #926d3d;
     font-size: 18px;
     text-align: center;
+}
+
+.header-nav-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 14px;
+    top: 36px;
+}
+
+.header-nav-button-line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+
+.header-nav-button-line + .header-nav-button-line {
+    margin-top: 6px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    background-color: #e6e6e6;
 }
 
 .footer-navs {
@@ -72,8 +103,8 @@ nav {
 }
 
 .footer-navs li {
+    display: flex;
     list-style: none;
-    margin-left: 30px;
 }
 
 .footer-navs li a {
@@ -82,6 +113,54 @@ nav {
     color: #000;
     font-weight: 600;
     font-size: 14px;
+    flex: 1;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #000;
+    padding-top: 30px;
+}
+
+footer .fa  {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+footer p a span {
+    color: #e91e63;
+    font-size: 15px;
+}
+
+.footer-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,6 +186,7 @@ nav {
         flex-direction: row;
         flex: 1;
         justify-content: flex-end;
+        margin-top: 0;
     }
 
     .header-navs li {
@@ -127,10 +207,18 @@ nav {
         letter-spacing: 2px;
     }
 
+    .header-nav-button {
+        display: none;
+    }
+
     .footer-navs-ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
+    .footer-navs li a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

@@ -20,7 +20,7 @@
 }
 
 .hero-title {
-    color: #ca8a37;
+    color: #cca44e;
     font-family: 'Alex Brush', cursive;
     font-size: 65px;
 }
@@ -36,10 +36,10 @@
 
 .hero-button {
     color: #fff;
-    background-color: transparent;
-    border: solid #fff 1px;
+    background-color:rgb(216, 174, 85);
+    border: solid #d6b774 1px;
     border-radius: 20px;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 40px;
     font-size: 12px;
     margin: 10px 5px;

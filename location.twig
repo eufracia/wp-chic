@@ -1,0 +1,21 @@
+<section class="section section-page-header" style="background-image: url('{{acf.page_image}}'); background-size: cover;">
+    <h1 class="page-title" style="color:{{acf.page_title_color}}">{{acf.page_title}}</h1>
+    <p class="page-description" style="color:{{acf.page_description_color}}">{{acf.page_description}}</p>
+</section>
+{% for item in acf.locations %}
+<section class="section section-location">
+    <div class="section-column">
+        <iframe frameborder="0" style="border:0; flex: 1;" src="https://www.google.com/maps/embed/v1/place?q={{item.location_map.address}}&key=AIzaSyCW7sopZscjNLk7EBOzv11Vh5cm1KqOs68" allowfullscreen></iframe>
+    </div>
+    <div class="section-column section-column-info section-column-info-location">
+        <h2>{{item.location_name}}</h2>
+        <h3>{{item.location_map.address}}</h3>
+        <p>Call for Reservations: {{item.location_phone}}</p>
+        <p>Hours</p>
+        {% for hour in item.location_hours %}
+        <p>{{hour.start_day}} - {{hour.end_day}} <b>{{hour.start_hour}} - {{hour.end_hour}}</b></p>
+        {% endfor %}
+        <a class="section-column-button" href="{{item.menu_button_url}}">{{item.menu_button_text}}</a>
+    </div>
+</section>
+{% endfor %}
