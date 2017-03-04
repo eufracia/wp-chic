@@ -1,10 +1,14 @@
-<section class="section section-page-header" style="background-image: url('{{acf.page_image}}'); background-size: cover;">
+<section class="section section-page-header" style="background-image: url('{{acf.page_image.sizes.large}}'); background-size: cover;">
     <h1 class="page-title" style="color:{{acf.page_title_color}}">{{acf.page_title}}</h1>
     <p class="page-description" style="color:{{acf.page_description_color}}">{{acf.page_description}}</p>
 </section>
 <section class="section section-gallery">
     {% for item in acf.gallery_items %}
-    <div class="section-gallery-column gallery-image" style="background-image: url('{{item.gallery_image}}'); background-size: cover;">
+    <div class="section-gallery-column gallery-image" style="background-image: url('{{item.gallery_image.sizes.medium}}'); background-size: cover;">
+        <div class="gallery-image-mask">
+            <h1>{{item.gallery_name}} </h1>
+            <p>{{item.gallery_description}} </p>
+        </div>
     </div>
     {% endfor %}
 </section>

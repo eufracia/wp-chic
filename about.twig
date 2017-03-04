@@ -1,15 +1,15 @@
-<section class="section section-page-header" style="background-image: url('{{acf.page_image}}'); background-size: cover;">
+<section class="section section-page-header" style="background-image: url('{{acf.page_image.sizes.large}}'); background-size: cover;">
     <h1 class="page-title" style="color:{{acf.page_title_color}}">{{acf.page_title}}</h1>
     <p class="page-description" style="color:{{acf.page_description_color}}">{{acf.page_description}}</p>
 </section>
 <section class="section section-about-image">
     <div class="section-column section-image section-column-about-image">
         <div class="section-images">
-           <div class="section-images-item first-image" style="background-image: url('{{acf.first_about_image}}'); background-size: cover;"></div>
-           <div class="section-images-item second-image" style="background-image: url('{{acf.second_about_image}}'); background-size: cover;"></div>
+           <div class="section-images-item first-image" style="background-image: url('{{acf.first_about_image.sizes.large}}'); background-size: cover;"></div>
+           <div class="section-images-item second-image" style="background-image: url('{{acf.second_about_image.sizes.large}}'); background-size: cover;"></div>
        </div>
        <div class="section-images-large">
-           <div class="section-images-item section-images-item-large" style="background-image: url('{{acf.third_about_image}}'); background-size: cover;"></div>
+           <div class="section-images-item section-images-item-large" style="background-image: url('{{acf.third_about_image.sizes.large}}'); background-size: cover;"></div>
         </div>
     </div>
     <div class="section-column section-column-info">
@@ -20,7 +20,7 @@
 <section class="section section-team">
     {% for member in acf.team_members %}
     <div class="section-column section-column-member">
-        <div class="member-image" style="background-image: url('{{member.member_image}}'); background-size: cover;"></div>
+        <div class="member-image" style="background-image: url('{{member.member_image.sizes.large}}'); background-size: cover;"></div>
         <h2>{{member.member_name}}</h1>
         <p>{{member.member_description}}</p>
     </div>
@@ -28,7 +28,7 @@
 </section>
 <section class="section section-inspiration">
     <div class="section-column section-column-image">
-        <div style="background-image: url('{{acf.inspiration_image}}'); background-size: cover;"></div>
+        <div style="background-image: url('{{acf.inspiration_image.sizes.large}}'); background-size: cover;"></div>
     </div>
     <div class="section-column section-column-info">
         <h2>{{acf.inspiration_title}}</h2>

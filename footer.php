@@ -11,10 +11,10 @@
         <div class="footer-social-media">
             <i class="fa social-media fa-facebook-square"></i>
             <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter-square"  style="font-size:30px"></i>
+            <i class="fa fa-twitter-square"></i>
         </div>
-        <p>&copy; CHIC RESTAURANT</p>
-        <p><a href="https://eufracia.me">Make with <span>♥</span> by Eufracia</a></p>
+        <p class="copyright">&copy; CHIC RESTAURANT</p>
+        <p class="author"><a href="https://eufracia.me">Make with <span>♥</span> by Eufracia</a></p>
     </footer>
     <script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
     <?php wp_footer(); ?>
