@@ -22,7 +22,6 @@
         <h1>{{acf.offer_title}}</h1>
         <p>{{acf.offer_description}}</p>
         <p>{{acf.offer_time}}</p>
-        <a class="section-column-button" href="{{acf.offer_link_url}}">{{acf.offer_link_text}}</a>
     </div>
 </section>
 <section class="section section-events">
@@ -31,6 +30,7 @@
     </div>
     <div class="section-column section-column-info">
         <h1>{{acf.event_title}}</h1>
+        <p>{{acf.event_description_title}}</p>
         <ul class="event-item">
         {% for event in acf.event_item %}
             <li>

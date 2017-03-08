@@ -102,6 +102,10 @@
         letter-spacing: 4px;
     }
 
+    .section-column-info p {
+        line-height: 30px;
+    }
+
     .section-column span,
     .section-column strong {
         display: initial;

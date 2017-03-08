@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .section-column-info-location h3 {
@@ -19,9 +19,17 @@
     font-weight: 400;
 }
 
+.section-column-maps {
+    padding: 28px;
+}
+
 @media only screen and (min-width: 768px) {
     .section-column-info {
         padding: 40px;
+    }
+
+    .section-column-info-location {
+        align-items: flex-start
     }
 
     .section-location {
